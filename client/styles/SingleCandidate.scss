@@ -1,0 +1,80 @@
+$rejct: #8d2e2e;
+$shortlist: #067c2d;
+
+.single-candidate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.single-candidate-img {
+  width: 20%;
+}
+
+.single-candidate-name {
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
+.single-candidate-status {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: baseline;
+}
+
+.single-candidate-status-title {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.single-candidate-status-p {
+  font-size: 1.5rem;
+}
+
+.change-status {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.change-status-button {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  margin: 0 0.5rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.reject-button {
+  background: $rejct;
+  border: 1px solid darken($rejct, 5);
+
+  &:hover {
+    background: lighten($rejct, 5);
+  }
+}
+
+.shortlist-button {
+  background: $shortlist;
+  border: 1px solid darken($shortlist, 5);
+
+  &:hover {
+    background: lighten($shortlist, 5);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .single-candidate-img {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .single-candidate-img {
+    width: 40%;
+  }
+}
